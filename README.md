@@ -55,7 +55,27 @@ Whether you're a recruiter, fellow dev, or an accidental wanderer — I'm glad y
 Wanna see the magic locally?
 
 ```bash
-git clone https://github.com/<your-username>/<your-portfolio-repo>.git
-cd <your-portfolio-repo>
+git clone https://github.com/VarunYenni/varunkumar-yenni-portfolio.git
+cd varunkumar-yenni-portfolio
 npm install
 npm run dev
+
+Open your browser and navigate to `http://localhost:3000`
+```
+
+## 🤝 Let's Connect
+
+<p align="left">
+  <a href="https://github.com/varunYenni" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://www.linkedin.com/in/varunkumaryenni" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:varunsagaryenni@email.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://varunyenni.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+  </a>
+</p>
