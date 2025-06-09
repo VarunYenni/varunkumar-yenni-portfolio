@@ -39,9 +39,7 @@ const HeroContent = ({setModalOpen}) => {
                 </motion.h3>
 
                 <motion.p variants={item} className="hero-description">
-                    I build fast, accessible, and modern web applications. Currently
-                    working on projects that solve real-world problems and enhance user
-                    experience.
+                   Exploring the world of web development, one pixel at a time. Passionate about crafting seamless user experiences and scalable applications.
                 </motion.p>
 
                 <motion.div variants={item} className="hero-buttons">
