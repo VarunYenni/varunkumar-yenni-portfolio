@@ -11,7 +11,7 @@ import Journey from "./components/Journey.jsx";
 import { Player } from '@lottiefiles/react-lottie-player';
 import developerAnim from './assets/astroTyping.json';
 import HeroBackground from "./helperComponents/HeroBackground.jsx";
-import useClickOutside from "./CustomHooks/useClickOutside.js";
+import useClickOutside from "./customHooks/useClickOutside.js";
 import ContactModal from "./helperComponents/ContactModal.jsx";
 
 const App = () => {
