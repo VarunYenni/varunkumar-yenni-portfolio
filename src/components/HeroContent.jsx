@@ -1,0 +1,72 @@
+import React, {useState} from "react";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { handleDownload, openModal } from "../common/utils.js";
+
+const container = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.3,
+        },
+    },
+};
+
+const item = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+};
+
+const HeroContent = ({setModalOpen}) => {
+    return (
+        <section className="hero-section">
+            <motion.div
+                className="hero-container"
+                initial="hidden"
+                animate="visible"
+                variants={container}
+            >
+                <motion.h1 variants={item} className="hero-hi">
+                    Hi, I’m
+                </motion.h1>
+
+                <motion.h2 variants={item} className="hero-name">
+                    Varun Kumar
+                </motion.h2>
+
+                <motion.h3 variants={item} className="hero-role">
+                    Frontend Developer
+                </motion.h3>
+
+                <motion.p variants={item} className="hero-description">
+                    I build fast, accessible, and modern web applications. Currently
+                    working on projects that solve real-world problems and enhance user
+                    experience.
+                </motion.p>
+
+                <motion.div variants={item} className="hero-buttons">
+                    <button className="btn btn-secondary" onClick={handleDownload}>Download Resume</button>
+                    <button className="btn btn-primary" onClick={() => setModalOpen(true)}>Let's Talk</button>
+                </motion.div>
+
+                <motion.div variants={item} className="hero-social-icons">
+                    <a href="https://github.com/varunyenni" target="_blank" rel="noopener noreferrer">
+                        <FaGithub />
+                    </a>
+                    <a href="https://linkedin.com/in/varunkumaryenni" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin />
+                    </a>
+                    <a href="mailto:varunsagaryenni@gmail.com">
+                        <FaEnvelope />
+                    </a>
+                </motion.div>
+
+                <motion.p variants={item} className="hero-location">
+                    Bangalore, India
+                </motion.p>
+            </motion.div>
+        </section>
+    );
+};
+
+export default HeroContent;

@@ -22,7 +22,7 @@ This is where pixels meet passion and components meet caffeine ☕.
 
 I built this portfolio as a reflection of:
 - My frontend journey (mainly React & JavaScript).
-- My current learnings in **TypeScript**, **AWS**, **Next.js**, and **Spring Boot**.
+- My current learnings in **TypeScript**, **AWS**, and **Spring Boot**.
 - My goal of becoming a **full-stack developer** and then diving head-first into the magical world of **AI/Gen AI**.
 
 Whether you're a recruiter, fellow dev, or an accidental wanderer — I'm glad you're here.
