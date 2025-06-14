@@ -16,6 +16,7 @@ const HeroBackground = () => {
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
     return (
         <>
             <div className="background-layer layer1"></div>

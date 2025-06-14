@@ -1,13 +1,13 @@
 import React from 'react';
 import '../styles/Skills.css';
-import {journeyItems, skillSet} from '../constants/constants.js'; // Ensure the CSS file is imported
+import {journeyItems, skillSet} from '../constants/constants.jsx'; // Ensure the CSS file is imported
 
 const Skills = () => {
     return (
         <div className="dark-page">
             <div>
-                <div className="stars"></div>
-                <div className="torchlight"></div>
+                <div className="stars" />
+                <div className="torchlight" />
             </div>
             <div className="skills">
                 <div className="experience">

@@ -1,18 +1,26 @@
 import React from 'react';
+import Waves from "../helperComponents/Waves.jsx";
+import ChatBot from "../helperComponents/ChatBot.jsx";
+import '../styles/Contact.css';
 
 const Contact = () => {
-    return (
-        <section className="contact">
-            <h2>Contact Me</h2>
-            <p>If you want to discuss a project or just want to say hi, feel free to reach out!</p>
-            <form>
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    );
+   return (
+       <div className="contact">
+          <div className="star-background"/>
+          <div className="contact-content">
+              <div className="space-message">
+                  <div className="main-text">Thanks for orbiting through my universe!</div>
+                  <div className="sub-text">Ready to explore new possibilities together?</div>
+              </div>
+              <div className="chat-bot-wrapper">
+                  <ChatBot />
+              </div>
+          </div>
+          <div className="footer">
+             <Waves/>
+          </div>
+       </div>
+   )
 };
 
 export default Contact;

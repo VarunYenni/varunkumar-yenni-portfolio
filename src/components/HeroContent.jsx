@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { handleDownload, openModal } from "../common/utils.js";
+import { handleDownload } from "../common/utils.js";
+import Star from "../assets/star-1.svg";
 
 const container = {
     hidden: {},
@@ -20,6 +21,9 @@ const item = {
 const HeroContent = ({setModalOpen}) => {
     return (
         <section className="hero-section">
+            <div className="star-wrapper">
+                <img src={Star} alt="twinkle star" className="twinkle-star"/>
+            </div>
             <motion.div
                 className="hero-container"
                 initial="hidden"
@@ -39,23 +43,24 @@ const HeroContent = ({setModalOpen}) => {
                 </motion.h3>
 
                 <motion.p variants={item} className="hero-description">
-                   Exploring the world of web development, one pixel at a time. Passionate about crafting seamless user experiences and scalable applications.
+                    Exploring the world of web development, one pixel at a time. Passionate about crafting seamless user
+                    experiences and scalable applications.
                 </motion.p>
 
                 <motion.div variants={item} className="hero-buttons">
-                    <button className="btn btn-secondary" onClick={handleDownload}>Download Resume</button>
-                    <button className="btn btn-primary" onClick={() => setModalOpen(true)}>Let's Talk</button>
+                    <button className="btn btn-secondary" onClick={handleDownload}>Launch Resume</button>
+                    <button className="btn btn-primary" onClick={() => setModalOpen(true)}>Transmit Signal</button>
                 </motion.div>
 
                 <motion.div variants={item} className="hero-social-icons">
                     <a href="https://github.com/varunyenni" target="_blank" rel="noopener noreferrer">
-                        <FaGithub />
+                        <FaGithub/>
                     </a>
                     <a href="https://linkedin.com/in/varunkumaryenni" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin />
+                        <FaLinkedin/>
                     </a>
                     <a href="mailto:varunsagaryenni@gmail.com">
-                        <FaEnvelope />
+                        <FaEnvelope/>
                     </a>
                 </motion.div>
 
