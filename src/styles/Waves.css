@@ -121,3 +121,27 @@
         font-size: 1rem;
     }
 }
+
+@media (max-width: 360px) {
+    .waves {
+        height: 120px;
+    }
+
+    .waves-icons a {
+        font-size: 1rem;
+    }
+
+    .main-text {
+        font-size: 0.8rem;
+    }
+
+    .waves-curve {
+        height: 60px;
+    }
+
+    .waves-glass {
+        margin-top: 1px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
