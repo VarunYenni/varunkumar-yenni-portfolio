@@ -537,3 +537,22 @@
         height: 2.25rem;
     }
 }
+
+@media (max-width: 360px) {
+    .chatbot-wrapper {
+        width: 100%;
+        height: calc(90vh - 8rem);
+    }
+
+    .chatbot-title {
+        font-size: 0.75rem;
+    }
+
+    .chatbot-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .chat-messages {
+        padding: 0.5rem;
+    }
+}
