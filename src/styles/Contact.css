@@ -1,6 +1,5 @@
 .contact {
     position:relative;
-    /*overflow: hidden;*/
     background: black;
     height: 100vh;
     font-family: 'Inter', sans-serif;
@@ -8,7 +7,7 @@
 
 .contact-content {
     position: absolute;
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -82,15 +81,48 @@
 }
 
 @media (max-width: 768px) {
-    .contact-content {
-        flex-direction: column;
-    }
-   .space-message {
-       display: none;
-   }
    .chat-bot-wrapper {
        right: 10px;
        left: 10px;
    }
+    .main-text {
+        font-size: 1.8rem;
+    }
+    .sub-text {
+        font-size: 16px;
+    }
+    .space-message {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .space-message {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .chat-bot-wrapper {
+        left: 0;
+        right: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .space-message {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .main-text {
+        font-size: 1.8rem;
+    }
+    .sub-text {
+        font-size: 18px;
+    }
 }
 

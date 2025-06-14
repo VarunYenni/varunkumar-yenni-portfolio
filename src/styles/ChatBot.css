@@ -101,7 +101,7 @@
 /* Header Styles */
 .chatbot-header {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1rem;
     position: relative;
 }
@@ -436,6 +436,24 @@
 
 .chatbot-messages::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1024px) {
+    .chatbot-container {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .chatbot-wrapper {
+        width: 100%;
+        height: calc(100vh - 5rem);
+        max-height: 37rem;
+    }
+
+    .chatbot-trigger {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
 }
 
 /* Responsive Design */

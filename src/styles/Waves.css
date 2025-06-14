@@ -107,3 +107,17 @@
         font-size: 14px;
     }
 }
+
+@media (max-height: 740px) {
+    .waves {
+        height: 150px;
+    }
+
+    .waves-icons a {
+        font-size: 1.2rem;
+    }
+
+    .main-text {
+        font-size: 1rem;
+    }
+}
