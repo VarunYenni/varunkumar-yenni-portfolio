@@ -217,12 +217,8 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .skills, .skills-list {
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
     .skill-item {
+        justify-content: center;
         width: 35%;
     }
 
@@ -238,5 +234,9 @@
 
     .experience-description, .skill-description {
         font-size: 0.85rem;
+    }
+
+    .skill-description {
+        display: none;
     }
 }

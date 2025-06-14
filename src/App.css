@@ -1,27 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=Outfit:wght@300;400;500;600&family=Manrope:wght@300;400;500;600&display=swap');
-
 .app {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    font-family: 'Outfit', sans-serif;
     scroll-behavior: smooth;
-}
-
-.content {
-}
-
-.projects {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.5) 60%,
-        rgba(0, 0, 0, 0) 100%
-    );
 }
 
 .astro-typing-animation {
