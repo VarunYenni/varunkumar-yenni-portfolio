@@ -1,12 +1,13 @@
 import { useRef, useEffect, useState } from "react";
 
-const useClickOutside = (initialState = false) => {
+const useClickOutside = (initialState = false, onClose = {}) => {
     const [isOpen, setIsOpen] = useState(initialState);
     const ref = useRef(null);
 
     const handleClickOutside = (event) => {
         if (ref.current && !ref.current.contains(event.target)) {
             setIsOpen(false);
+            onClose();
         }
     };
 

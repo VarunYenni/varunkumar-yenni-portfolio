@@ -27,7 +27,8 @@ export const journeyItems = [
     year: "2022 - Present",
     description: "Software Engineer 2 at American Express",
     image: AMEXLogo
-    }];
+    },
+];
 
 export const skillSet = [
     {
@@ -95,6 +96,7 @@ export const responses = {
     "okay": "Great! If you have any more questions about Varun's skills, experience, or interests, feel free to ask. I'm here to help! 😊",
     "resume": <button style={{background: "gray",color: 'white', borderRadius: "5px solid white"}} onClick={() => handleDownload()}>Launch Resume</button>,
     "hire": "If you're interested in hiring Varun, you can reach out via the contact form on his portfolio or connect with him on LinkedIn. He's always open to new opportunities and collaborations!",
+    'achievements': <p>Varun has been recognized for his contributions to projects at American Express and received <b style={{color: 'yellow'}}>Blue Rewards</b> for playing a key role in improving application performance and user experience. He also received <b style={{color: 'yellow'}}>Merit Awards</b> for his academic excellence from State Government of Andhra Pradesh and from Central Government of India</p>,
     "bye": "Goodbye! If you have more questions later, feel free to ask. Have a great day! 😊",
     "education": <p>Varun holds a B.Tech in Electronics and Communication Engineering from <b style={{color: 'yellow'}}>NIT Trichy (2018–2022)</b>, one of the top institutes of India. His education provided a strong foundation in problem-solving and technical skills, which he applies to his work as a software engineer.</p>
 };
@@ -115,15 +117,16 @@ export const categories = [
     { keywords: ['learn', 'studying', 'current'], response: responses.learning },
     { keywords: ['hobbies', 'interests', 'fun', 'free time'], response: responses.hobbies },
     { keywords: ['contact', 'reach', 'email', 'hire'], response: responses.contact },
-    { keywords: ['philosophy', 'approach', 'believe'], response: responses.philosophy },
+    { keywords: ['philosophy', 'approach', 'believe', 'ethics', 'values', 'principles'], response: responses.philosophy },
     { keywords: ['project', 'build', 'portfolio'], response: responses.projects },
     { keywords: ['skill', 'good at', 'expert'], response: responses.skills },
     { keywords: ['future', 'next', 'goal', 'plan'], response: responses.future },
     { keywords: ['hire', 'recruit', 'job', 'work with'], response: responses.hire },
     { keywords: ['resume', 'cv', 'curriculum vitae'], response: responses.resume },
-    { keywords: ['bye', 'goodbye', 'see you'], response: responses.bye },
-    { keywords: ['okay', 'alright', 'sounds good', 'got it', 'understood', 'sure', 'ok'], response: responses.okay },
-    { keywords: ['hello', 'hi', 'hey'], response: "Hello! I'm here to tell you all about Varun. What would you like to know? 😊" }
+    { keywords: ['bye', 'goodbye', 'see you', 'Good Night'], response: responses.bye },
+    { keywords: ['okay', 'alright', 'sounds good', 'got it', 'understood', 'sure', 'ok', 'Thanks', 'Thank you'], response: responses.okay },
+    { keywords: ['achievements', 'awards', 'recognition', 'accomplishments'], response: responses.achievements },
+    { keywords: ['hello', 'hi', 'hey', 'greetings', 'Good Morning', 'Good Evening'], response: "Hello! I'm here to tell you all about Varun. What would you like to know? 😊" }
 ];
 
 export const defaultMessage = "Hi there! 👋 I'm Varun's chat bot. Ask me anything about his skills, experience, or interests!";

@@ -14,6 +14,7 @@ const ChatBot = () => {
     ]);
     const [input, setInput] = useState('');
     const [isTyping, setIsTyping] = useState(false);
+    const [hasUserInteracted, setHasUserInteracted] = useState(false);
     const messagesEndRef = useRef(null);
 
     const getResponse = (userInput) => {
@@ -28,6 +29,7 @@ const ChatBot = () => {
 
     const handleSend = async () => {
         if (!input.trim()) return;
+        setHasUserInteracted(true);
 
         const userMessage = {
             id: Date.now(),
@@ -61,8 +63,10 @@ const ChatBot = () => {
     };
 
     useEffect(() => {
-        scrollToBottom();
-    }, [messages]);
+        if (hasUserInteracted) {
+            scrollToBottom();
+        }
+    }, [messages, hasUserInteracted]);
 
     return (
         <div className="chatbot-container">
@@ -147,7 +151,11 @@ const ChatBot = () => {
                             type="text"
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
-                            onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+                            onKeyDown={(e) => {
+                                if (e.key === 'Enter' && !e.shiftKey) {
+                                    handleSend();
+                                }
+                            }}
                             placeholder="Ask me anything about Varun..."
                             className="chat-input"
                         />

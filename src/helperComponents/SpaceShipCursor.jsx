@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 
-const SnitchCursor = () => {
+const SpaceShipCursor = () => {
     const containerRef = useRef(null);
     const requestRef = useRef(null);
 
@@ -59,8 +59,8 @@ const SnitchCursor = () => {
             ref={containerRef}
             style={{
                 position: "fixed",
-                width: "80px",
-                height: "80px",
+                width: "70px",
+                height: "70px",
                 pointerEvents: "none",
                 zIndex: 9999,
                 transform: "translate(-50%, -50%)",
@@ -70,4 +70,4 @@ const SnitchCursor = () => {
     );
 };
 
-export default SnitchCursor;
+export default SpaceShipCursor;
