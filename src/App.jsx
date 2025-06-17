@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react';
 import Header from './components/Header';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import SnitchCursor from "./helperComponents/SnitchCursor.jsx";
+import SpaceShipCursor from "./helperComponents/SpaceShipCursor.jsx";
 import HeroContent from "./components/HeroContent.jsx";
 import { Player } from '@lottiefiles/react-lottie-player';
 import developerAnim from './assets/astroTyping.json';
@@ -31,7 +31,7 @@ const App = () => {
 
     return (
       <div className="app">
-          <SnitchCursor/>
+          <SpaceShipCursor/>
           <Header/>
           <div>
               <section className="about" id="about">
