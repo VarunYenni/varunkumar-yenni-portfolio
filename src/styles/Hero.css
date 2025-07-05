@@ -12,6 +12,7 @@ body {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    color:black;
 }
 
 .background-layer {
