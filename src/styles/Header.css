@@ -5,9 +5,10 @@
 
 @font-face {
     font-family: 'MyFont';
-    src: url('../fonts/AnekLatin_Condensed/AnekLatin_Condensed-Bold.ttf') format('ttf');
+    src: url('../../public/AnekLatin_Condensed-ExtraBold.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 body {

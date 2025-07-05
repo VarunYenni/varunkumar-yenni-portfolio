@@ -1,6 +1,6 @@
 import './App.css';
 import './styles/Hero.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, Suspense} from 'react';
 import Header from './components/Header';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
@@ -16,6 +16,14 @@ const App = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
+        const splash = document.getElementById('splash');
+        if (splash) {
+            splash.classList.add('fade-out');
+            setTimeout(() => splash.remove(), 500); // match with CSS fade duration
+        }
     }, []);
 
     const {ref, isOpen, setIsOpen } = useClickOutside(false);
@@ -49,12 +57,16 @@ const App = () => {
                       className="astro-typing-animation"
                   />
               </section>
-              <section className="skills" id="skills">
-                  <Skills className="skills" id="skills" />
-              </section>
-             <section id="contact">
-                 <Contact />
-             </section>
+              <Suspense fallback={null}>
+                  <section className="skills" id="skills">
+                      <Skills className="skills" id="skills" />
+                  </section>
+              </Suspense>
+              <Suspense fallback={null}>
+                  <section id="contact">
+                      <Contact />
+                  </section>
+              </Suspense>
           </div>
       </div>
   );
