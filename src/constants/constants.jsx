@@ -131,3 +131,20 @@ export const categories = [
 
 export const defaultMessage = "Hi there! 👋 I'm Varun's chat bot. Ask me anything about his skills, experience, or interests!";
 export const unAvailableCategory = "That's an interesting question! I can tell you about Varun's technologies, experience, current learning, hobbies, contact info, or development philosophy. What interests you most?";
+
+export const projects = [
+    {
+        name: "Portfolio Website",
+        description: "Space themed portfolio showcasing Varun's skills, projects, and experience. Built with React, CSS, and JavaScript, it features a cosmic design and interactive elements.",
+        image: "../portfolio.webp",
+        gitLink: "https://github.com/VarunYenni/varunkumar-yenni-portfolio",
+        live: "https://varunyenni.vercel.app/"
+    },
+    {
+        name: "Gk Daily Insights Hub",
+        description: "An AI powered web application providing daily insights, quizzes and weekly digests on current affairs, designed to enhance general knowledge.",
+        image: "../gkDaily.webp",
+        gitLink: "https://github.com/VarunYenni/gk-daily-insight-hub",
+        live: "https://gk-daily.vercel.app/"
+    },
+]

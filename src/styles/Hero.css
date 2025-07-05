@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'MyFont';
-    src: url('../fonts/AnekLatin_Condensed/AnekLatin_Condensed-ExtraBold.ttf') format('ttf');
+    src: url('../../public/AnekLatin_Condensed-ExtraBold.ttf') format('ttf');
+    font-display: swap;
 }
 
 body {
