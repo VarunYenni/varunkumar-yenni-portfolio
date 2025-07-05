@@ -48,18 +48,18 @@ const HeroContent = ({setModalOpen}) => {
                 </motion.p>
 
                 <motion.div variants={item} className="hero-buttons">
-                    <button className="btn btn-secondary" onClick={handleDownload}>Launch Resume</button>
-                    <button className="btn btn-primary" onClick={() => setModalOpen(true)}>Transmit Signal</button>
+                    <button className="btn btn-secondary" onClick={handleDownload} aria-label="launch resume">Launch Resume</button>
+                    <button className="btn btn-primary" onClick={() => setModalOpen(true)} aria-label="transmit signal">Transmit Signal</button>
                 </motion.div>
 
                 <motion.div variants={item} className="hero-social-icons">
-                    <a href="https://github.com/varunyenni" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/varunyenni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <FaGithub/>
                     </a>
-                    <a href="https://linkedin.com/in/varunkumaryenni" target="_blank" rel="noopener noreferrer">
+                    <a href="https://linkedin.com/in/varunkumaryenni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <FaLinkedin/>
                     </a>
-                    <a href="mailto:varunsagaryenni@gmail.com">
+                    <a href="mailto:varunsagaryenni@gmail.com" aria-label="Email">
                         <FaEnvelope/>
                     </a>
                 </motion.div>

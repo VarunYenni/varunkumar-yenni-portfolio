@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import vk from '../assets/vk.png';
+import vk from '../assets/vk.webp';
 import '../styles/Header.css';
 import useClickOutside from "../customHooks/useClickOutside.js";
 
