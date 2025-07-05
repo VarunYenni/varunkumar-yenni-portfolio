@@ -32,7 +32,7 @@ const ContactModal = ({ref, setIsOpen, closing}) => {
                     <input type="email" placeholder="Your Email" required className="email-input" name="email"/>
                     <label htmlFor="message">Message</label>
                     <textarea placeholder="Your Message" required name="message"></textarea>
-                    <button type="submit" className="submitButton">Send Message</button>
+                    <button type="submit" className="submitButton" aria-label="send">Send Message</button>
                 </form>
             </div>
         </div>

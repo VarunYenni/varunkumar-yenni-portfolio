@@ -137,6 +137,7 @@ const ChatBot = () => {
                                 key={index}
                                 onClick={() => handleSuggestionClick(question)}
                                 className="suggestion-button"
+                                aria-label="suggestion"
                             >
                                 {question}
                             </button>
@@ -163,6 +164,7 @@ const ChatBot = () => {
                             onClick={handleSend}
                             disabled={!input.trim()}
                             className="send-button"
+                            aria-label="send-button"
                         >
                             <Send className="send-icon" />
                         </button>

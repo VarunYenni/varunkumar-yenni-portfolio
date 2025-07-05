@@ -6,10 +6,3 @@ export const handleDownload = () => {
     link.click();
     document.body.removeChild(link);
 };
-
-export const openModal = () => {
-    const modal = document.getElementById('contactModal');
-    if (modal) {
-        modal.style.display = 'block';
-    }
-}

@@ -1,4 +1,4 @@
-import NITTLogo from '../assets/journeyLogos/NITT_logo.png';
+import NITTLogo from '../assets/journeyLogos/NITT_logo.webp';
 import AMEXLogo from '../assets/journeyLogos/AMEX.png';
 import {
     awsLogo,
@@ -94,7 +94,7 @@ export const responses = {
     "skills": "Frontend: React, JavaScript, HTML5, CSS3, responsive design. Tools: Git, modern build tools, performance optimization. Soft skills: problem-solving, user empathy, continuous learning mindset.",
     "future": "Varun is excited about exploring AI integration in web development, going deep dive into full stack development, advanced animation libraries, and contributing to open source projects. He's always looking for challenges that push the boundaries of what's possible on the web.",
     "okay": "Great! If you have any more questions about Varun's skills, experience, or interests, feel free to ask. I'm here to help! 😊",
-    "resume": <button style={{background: "gray",color: 'white', borderRadius: "5px solid white"}} onClick={() => handleDownload()}>Launch Resume</button>,
+    "resume": <button style={{background: "gray",color: 'white', borderRadius: "5px solid white"}} onClick={() => handleDownload()} aria-label="launch resume">Launch Resume</button>,
     "hire": "If you're interested in hiring Varun, you can reach out via the contact form on his portfolio or connect with him on LinkedIn. He's always open to new opportunities and collaborations!",
     'achievements': <p>Varun has been recognized for his contributions to projects at American Express and received <b style={{color: 'yellow'}}>Blue Rewards</b> for playing a key role in improving application performance and user experience. He also received <b style={{color: 'yellow'}}>Merit Awards</b> for his academic excellence from State Government of Andhra Pradesh and from Central Government of India</p>,
     "bye": "Goodbye! If you have more questions later, feel free to ask. Have a great day! 😊",
@@ -134,14 +134,14 @@ export const unAvailableCategory = "That's an interesting question! I can tell y
 
 export const projects = [
     {
-        name: "Portfolio Website",
+        title: "Portfolio",
         description: "Space themed portfolio showcasing Varun's skills, projects, and experience. Built with React, CSS, and JavaScript, it features a cosmic design and interactive elements.",
         image: "../portfolio.webp",
         gitLink: "https://github.com/VarunYenni/varunkumar-yenni-portfolio",
         live: "https://varunyenni.vercel.app/"
     },
     {
-        name: "Gk Daily Insights Hub",
+        title: "Gk Daily Insights Hub",
         description: "An AI powered web application providing daily insights, quizzes and weekly digests on current affairs, designed to enhance general knowledge.",
         image: "../gkDaily.webp",
         gitLink: "https://github.com/VarunYenni/gk-daily-insight-hub",
