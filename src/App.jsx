@@ -2,8 +2,8 @@ import './App.css';
 import './styles/Hero.css';
 import React, {useState, useEffect, Suspense} from 'react';
 import Header from './components/Header';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
+import TechGalaxy from './components/TechGalaxy.jsx';
+import Connect from './components/Connect.jsx';
 import SpaceShipCursor from "./helperComponents/SpaceShipCursor.jsx";
 import HeroContent from "./components/HeroContent.jsx";
 import { Player } from '@lottiefiles/react-lottie-player';
@@ -58,13 +58,13 @@ const App = () => {
                   />
               </section>
               <Suspense fallback={null}>
-                  <section className="skills" id="skills">
-                      <Skills className="skills" id="skills" />
+                  <section className="skills" id="tech-galaxy">
+                      <TechGalaxy />
                   </section>
               </Suspense>
               <Suspense fallback={null}>
-                  <section id="contact">
-                      <Contact />
+                  <section id="connect">
+                      <Connect />
                   </section>
               </Suspense>
           </div>

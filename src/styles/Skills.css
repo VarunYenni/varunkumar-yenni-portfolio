@@ -115,7 +115,7 @@
 }
 
 
-/* Skills Section */
+/* TechGalaxy Section */
 .skills-container {
     width: 100%;
     max-width: 1200px;
@@ -203,15 +203,9 @@
 
 /* Animation for glowing border */
 @keyframes borderGlow {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 

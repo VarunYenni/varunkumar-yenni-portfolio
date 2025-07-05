@@ -22,7 +22,7 @@ This is where pixels meet passion and components meet caffeine ☕.
 
 I built this portfolio as a reflection of:
 - My frontend journey (mainly React & JavaScript).
-- My current learnings in **TypeScript**, **AWS**, and **Spring Boot**.
+- My current learning in **TypeScript**, **AWS**, and **Spring Boot**.
 - My goal of becoming a **full-stack developer** and then diving head-first into the magical world of **AI/Gen AI**.
 
 Whether you're a recruiter, fellow dev, or an accidental wanderer — I'm glad you're here.
@@ -33,7 +33,7 @@ Whether you're a recruiter, fellow dev, or an accidental wanderer — I'm glad y
 
 - 🔍 **Project Gallery** – Browse my best work (no infinite scroll here, but close).
 - 🧠 **Tech Stack** – Highlighted with cute badges so they look smarter.
-- 📬 **Contact Section** – Let’s build something cool (or just say hi!).
+- 📬 **Connect Section** – Let’s build something cool (or just say hi!).
 - 🎯 **Responsiveness** – Try it on your phone, tablet, fridge — works everywhere.
 - 🧛‍♂️ **Dark Mode** – Because developers are creatures of the night.
 
@@ -41,12 +41,12 @@ Whether you're a recruiter, fellow dev, or an accidental wanderer — I'm glad y
 
 ## 🔧 Technologies & Tools
 
-| Category       | Stack                                    |
-|----------------|------------------------------------------|
-| 💻 Frontend     | React, JavaScript, TypeScript            |
-| 🧰 Backend      | Java, Spring Boot (in-progress... building the backend biceps 💪) |
-| 🧠 Learning Now | AI/ML basics, OpenAI APIs, Docker, System Design, AWS |
-| 🛠️ Tooling      | Git, WebStorm, VSCode, Postman           |
+| Category       | Stack                                                                      |
+|----------------|----------------------------------------------------------------------------|
+| 💻 Frontend     | React, JavaScript, TypeScript                                              |
+| 🧰 Backend      | Node.js, Java, Spring Boot (in-progress... building the backend biceps 💪) |
+| 🧠 Learning Now | AI/ML basics, OpenAI APIs, Docker, System Design, AWS                      |
+| 🛠️ Tooling      | Git, WebStorm, VSCode, Postman                                             |
 
 ---
 

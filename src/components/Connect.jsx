@@ -3,7 +3,7 @@ import Waves from "../helperComponents/Waves.jsx";
 import ChatBot from "../helperComponents/ChatBot.jsx";
 import '../styles/Contact.css';
 
-const Contact = () => {
+const Connect = () => {
    return (
        <div className="contact">
           <div className="star-background"/>
@@ -23,4 +23,4 @@ const Contact = () => {
    )
 };
 
-export default Contact;
+export default Connect;

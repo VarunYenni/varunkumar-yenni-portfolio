@@ -28,8 +28,8 @@ const Header = () => {
 
             <nav className={`nav ${menuOpen || isOpen ? 'active' : ''}`}>
                 <a href="#about" className="neon-link" onClick={toggleMenu}>About</a>
-                <a href="#skills" className="neon-link" onClick={toggleMenu}>Tech Galaxy</a>
-                <a href="#contact" className="neon-link" onClick={toggleMenu}>Connect</a>
+                <a href="#tech-galaxy" className="neon-link" onClick={toggleMenu}>Tech Galaxy</a>
+                <a href="#connect" className="neon-link" onClick={toggleMenu}>Connect</a>
             </nav>
         </header>
     );
