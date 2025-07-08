@@ -1,5 +1,5 @@
 import NITTLogo from '../assets/journeyLogos/NITT_logo.webp';
-import AMEXLogo from '../assets/journeyLogos/AMEX.png';
+import AMEXLogo from '../assets/journeyLogos/AMEX.webp';
 import {
     awsLogo,
     cssLogo,
@@ -135,7 +135,7 @@ export const unAvailableCategory = "That's an interesting question! I can tell y
 export const projects = [
     {
         title: "Portfolio",
-        description: "Space themed portfolio showcasing Varun's skills, projects, and experience. Built with React, CSS, and JavaScript, it features a cosmic design and interactive elements.",
+        description: "Space themed portfolio showcasing Varun's skills, projects, and experience. Built with React, CSS, JavaScript and features a cosmic design",
         image: "../portfolio.webp",
         gitLink: "https://github.com/VarunYenni/varunkumar-yenni-portfolio",
         live: "https://varunyenni.vercel.app/"

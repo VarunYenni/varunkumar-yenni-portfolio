@@ -27,27 +27,27 @@ body {
 }
 
 .layer1 {
-    background-image: url('../assets/backGroundLayers/sky.jpg');
+    background-image: url('../assets/backGroundLayers/sky.webp');
     z-index: 1;
 }
 
 .layer2 {
-    background-image: url('../assets/backGroundLayers/mountain-3.png');
+    background-image: url('../assets/backGroundLayers/mountain-3.webp');
     z-index: 2;
 }
 
 .layer3 {
-    background-image: url('../assets/backGroundLayers/mountain-2.png');
+    background-image: url('../assets/backGroundLayers/mountain-2.webp');
     z-index: 3;
 }
 
 .layer4 {
-    background-image: url('../assets/backGroundLayers/mountain-1.png');
+    background-image: url('../assets/backGroundLayers/mountain-1.webp');
     z-index: 4;
 }
 
 .layer5 {
-    background-image: url('../assets/backGroundLayers/planets.png');
+    background-image: url('../assets/backGroundLayers/planets.webp');
     z-index: 5;
 }
 
