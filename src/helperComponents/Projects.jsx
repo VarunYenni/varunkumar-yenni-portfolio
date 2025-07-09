@@ -10,7 +10,7 @@ const Projects = () => {
                     projects.map((project, index) => (
                         <div className="project-item" key={index}>
                             <img className="project-image" src={project.image} alt={project.title} />
-                            <h3 className="project-title">{project.title}</h3>
+                            <h1 className="project-title">{project.title}</h1>
                             <p className="project-description">{project.description}</p>
                             <div className="project-links">
                                 {project.gitLink && (

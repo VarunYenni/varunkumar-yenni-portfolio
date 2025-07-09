@@ -78,7 +78,7 @@ const ChatBot = () => {
                             <Bot className="chatbot-icon" />
                         </div>
                         <div className="chatbot-info">
-                            <h3 className="chatbot-title">Ask About Varun</h3>
+                            <h1 className="chatbot-title">Ask About Varun</h1>
                             <p className="chatbot-subtitle">Galactic Support • Satellite connected</p>
                         </div>
                         <div className="chatbot-status">

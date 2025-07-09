@@ -17,18 +17,3 @@
     from{transform:translateY(0);}
     to  {transform:translateY(-10px);}
 }
-
-/* ===== typewriter animation ===== */
-.typing{
-    margin-top:.75rem;               /* space under rocket */
-    overflow:hidden;
-    white-space:nowrap;
-    border-right:.15em solid #fff;   /* blinking caret */
-    /* width animates from 0 to the text length (18ch ≈ 18 characters) */
-    animation:
-            typing   3.5s steps(30,end)   0s   infinite,
-            blink    .75s step-end        0s   infinite;
-}
-
-@keyframes typing   { from{width:0;} to{width:17ch;} }
-@keyframes blink    { 50%{border-color:transparent;} }
