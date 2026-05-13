@@ -1,5 +1,6 @@
 import NITTLogo from '../assets/journeyLogos/NITT_logo.webp';
 import AMEXLogo from '../assets/journeyLogos/AMEX.webp';
+import CISCOlogo from '../assets/journeyLogos/cisco.webp'
 import {
     awsLogo,
     cssLogo,
@@ -24,10 +25,16 @@ export const journeyItems = [
    },
     {
         title: "American Express",
-    year: "2022 - Present",
+    year: "2022 - 2026",
     description: "Software Engineer 2 at American Express",
     image: AMEXLogo
     },
+    {
+        title: "Cisco",
+        year: "2026 - present",
+        description: "Software Engineer 3 at Cisco",
+        image: CISCOlogo
+    }
 ];
 
 export const skillSet = [
@@ -85,7 +92,7 @@ export const skillSet = [
 
 export const responses = {
     "technologies": <p>Varun works with <b style={{color: 'yellow'}}>React, JavaScript, Node, HTML5, CSS3</b>, and modern frontend frameworks. He's passionate about creating seamless user experiences and scalable applications. Currently exploring Next.js, Java, AWS and AI Tech!</p>,
-    "experience": <p>Varun is a <b style={{color: 'yellow'}}>Software Engineer 2 at American Express (2022-Present)</b> with a B.Tech in Electronics and Communication from NIT Trichy (2018-2022). He combines technical expertise with creative problem-solving.</p>,
+    "experience": <p>Varun is a <b style={{color: 'yellow'}}>Software Engineer 3 at Cisco (2026-Present)</b>, previously worked at American Express (2022-2026) with a B.Tech in Electronics and Communication from NIT Trichy (2018-2022). He combines technical expertise with creative problem-solving.</p>,
     "learning": "Right now, Varun is diving deep into advanced React patterns, exploring Full Stack Development, and learning about performance optimization. He's always excited about emerging frontend technologies!",
     "hobbies": "When not coding, Varun enjoys exploring space documentaries (hence the cosmic theme!), playing strategy games, reading tech blogs, and experimenting with creative coding projects. He believes creativity fuels better development.",
     "contact": "You can reach Varun through the contact form on his portfolio, connect on LinkedIn, or check out his projects on GitHub. He's always open to discussing new opportunities and collaborations!",
