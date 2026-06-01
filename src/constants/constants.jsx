@@ -91,9 +91,9 @@ export const skillSet = [
 ];
 
 export const responses = {
-    "technologies": <p>Varun works with <b style={{color: 'yellow'}}>React, JavaScript, TypeScript, Node.js, HTML5, CSS3, Redux, Git, npm, and AWS</b>. He enjoys building polished interfaces, resilient frontend systems, and scalable web applications.</p>,
-    "experience": <p>Varun is a <b style={{color: 'yellow'}}>Software Engineer 3 at Cisco (2026-Present)</b>. Before Cisco, he worked at <b style={{color: 'yellow'}}>American Express from 2022-2026</b>, building user-focused web experiences and improving application performance.</p>,
-    "learning": "Right now, Varun is going deeper into full stack development, advanced React patterns, Java, AWS, AI-powered product experiences, and performance optimization.",
+    "technologies": <p>Varun works with <b style={{color: 'yellow'}}>React, JavaScript, Node, HTML5, CSS3</b>, and modern frontend frameworks. He's passionate about creating seamless user experiences and scalable applications. Currently exploring Next.js, Java, AWS and AI Tech!</p>,
+    "experience": <p>Varun is a <b style={{color: 'yellow'}}>Software Engineer 3 at Cisco (2026-Present)</b>, previously worked at American Express (2022-2026) with a B.Tech in Electronics and Communication from NIT Trichy (2018-2022). He combines technical expertise with creative problem-solving.</p>,
+    "learning": "Right now, Varun is diving deep into advanced React patterns, exploring Full Stack Development, and learning about performance optimization. He's always excited about emerging frontend technologies!",
     "hobbies": "When not coding, Varun enjoys exploring space documentaries (hence the cosmic theme!), playing strategy games, reading tech blogs, and experimenting with creative coding projects. He believes creativity fuels better development.",
     "contact": <p>You can reach Varun through the contact form, email him at <a href="mailto:varunsagaryenni@gmail.com">varunsagaryenni@gmail.com</a>, connect on <a href="https://linkedin.com/in/varunkumaryenni" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or view his code on <a href="https://github.com/VarunYenni" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>,
     "philosophy": "Varun believes in writing clean, maintainable code and putting users first. He thinks great development combines technical excellence with empathy - understanding what users really need and crafting experiences that feel effortless.",
