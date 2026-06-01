@@ -95,49 +95,71 @@ export const responses = {
     "experience": <p>Varun is a <b style={{color: 'yellow'}}>Software Engineer 3 at Cisco (2026-Present)</b>, previously worked at American Express (2022-2026) with a B.Tech in Electronics and Communication from NIT Trichy (2018-2022). He combines technical expertise with creative problem-solving.</p>,
     "learning": "Right now, Varun is diving deep into advanced React patterns, exploring Full Stack Development, and learning about performance optimization. He's always excited about emerging frontend technologies!",
     "hobbies": "When not coding, Varun enjoys exploring space documentaries (hence the cosmic theme!), playing strategy games, reading tech blogs, and experimenting with creative coding projects. He believes creativity fuels better development.",
-    "contact": "You can reach Varun through the contact form on his portfolio, connect on LinkedIn, or check out his projects on GitHub. He's always open to discussing new opportunities and collaborations!",
+    "contact": <p>You can reach Varun through the contact form, email him at <a href="mailto:varunsagaryenni@gmail.com">varunsagaryenni@gmail.com</a>, connect on <a href="https://linkedin.com/in/varunkumaryenni" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or view his code on <a href="https://github.com/VarunYenni" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>,
     "philosophy": "Varun believes in writing clean, maintainable code and putting users first. He thinks great development combines technical excellence with empathy - understanding what users really need and crafting experiences that feel effortless.",
-    "projects": "Varun has worked on various frontend projects focusing on user experience and performance. He enjoys building interactive applications and is always working on something new. Check out his GitHub for the latest experiments!",
-    "skills": "Frontend: React, JavaScript, HTML5, CSS3, responsive design. Tools: Git, modern build tools, performance optimization. Soft skills: problem-solving, user empathy, continuous learning mindset.",
+    "projects": <p>Varun's highlighted projects include this space-themed portfolio and <b style={{color: 'yellow'}}>GK Daily Insights Hub</b>, an AI-powered current affairs app with daily insights, quizzes, and weekly digests. His GitHub has the latest experiments.</p>,
+    "portfolioProject": <p>This portfolio is a space-themed React app showcasing Varun's skills, journey, projects, resume, and contact flow. It is built with React, CSS, JavaScript, animations, and a custom chatbot experience.</p>,
+    "gkProject": <p><b style={{color: 'yellow'}}>GK Daily Insights Hub</b> is an AI-powered web app for daily current-affairs insights, quizzes, and weekly digests. Live app: <a href="https://gk-daily.vercel.app/" target="_blank" rel="noopener noreferrer">gk-daily.vercel.app</a>.</p>,
+    "skills": "Frontend: React, JavaScript, TypeScript, HTML5, CSS3, Redux, responsive design, animations, and performance optimization. Backend/cloud interests: Node.js, Java, AWS, and full stack architecture. Soft skills: ownership, communication, problem-solving, and user empathy.",
     "future": "Varun is excited about exploring AI integration in web development, going deep dive into full stack development, advanced animation libraries, and contributing to open source projects. He's always looking for challenges that push the boundaries of what's possible on the web.",
     "okay": "Great! If you have any more questions about Varun's skills, experience, or interests, feel free to ask. I'm here to help! 😊",
-    "resume": <button style={{background: "gray",color: 'white', borderRadius: "5px solid white"}} onClick={() => handleDownload()} aria-label="launch resume">Launch Resume</button>,
-    "hire": "If you're interested in hiring Varun, you can reach out via the contact form on his portfolio or connect with him on LinkedIn. He's always open to new opportunities and collaborations!",
+    "resume": <p>You can download Varun's resume here: <button className="chatbot-inline-button" onClick={() => handleDownload()} aria-label="launch resume">Launch Resume</button></p>,
+    "hire": "If you're interested in hiring or collaborating with Varun, the best path is the contact form or LinkedIn. He is especially interested in full stack, frontend platform, React, performance, and AI-enabled product work.",
     'achievements': <p>Varun has been recognized for his contributions to projects at American Express and received <b style={{color: 'yellow'}}>Blue Rewards</b> for playing a key role in improving application performance and user experience. He also received <b style={{color: 'yellow'}}>Merit Awards</b> for his academic excellence from State Government of Andhra Pradesh and from Central Government of India</p>,
     "bye": "Goodbye! If you have more questions later, feel free to ask. Have a great day! 😊",
-    "education": <p>Varun holds a B.Tech in Electronics and Communication Engineering from <b style={{color: 'yellow'}}>NIT Trichy (2018–2022)</b>, one of the top institutes of India. His education provided a strong foundation in problem-solving and technical skills, which he applies to his work as a software engineer.</p>
+    "education": <p>Varun holds a B.Tech in Electronics and Communication Engineering from <b style={{color: 'yellow'}}>NIT Trichy (2018-2022)</b>. His education gave him a strong foundation in problem-solving, engineering thinking, and technical fundamentals.</p>,
+    "location": "Varun is based in Bangalore, India.",
+    "name": "Varun's full name is Varunkumar Yenni. He also uses Varun Yenni and Varun Kumar Yenni online.",
+    "role": "Varun is a Fullstack Developer with strong frontend depth in React, JavaScript, TypeScript, UI engineering, animations, and performance-focused web development.",
+    "strengths": "Varun's strengths are building polished user experiences, debugging complex UI behavior, improving performance, learning quickly, and balancing product empathy with engineering quality.",
+    "availability": "For opportunities or collaborations, please reach out through LinkedIn, email, or the portfolio contact form. The chatbot cannot confirm real-time availability, but it can point you to the best contact channels.",
+    "github": <p>Varun's GitHub is <a href="https://github.com/VarunYenni" target="_blank" rel="noopener noreferrer">github.com/VarunYenni</a>.</p>,
+    "linkedin": <p>Varun's LinkedIn is <a href="https://linkedin.com/in/varunkumaryenni" target="_blank" rel="noopener noreferrer">linkedin.com/in/varunkumaryenni</a>.</p>
 };
 
 export const suggestedQuestions = [
-    "What technologies does Varun work with?",
+    "What is Varun's current role?",
     "Tell me about Varun's experience",
-    "What's Varun currently learning?",
-    "What are Varun's hobbies?",
+    "What projects has Varun built?",
+    "What technologies does Varun work with?",
     "How can I contact Varun?",
-    "What's Varun's development philosophy?"
+    "Download Varun's resume",
+    "Where is Varun based?",
+    "What are Varun's strengths?",
+    "Tell me about GK Daily Insights Hub",
+    "What is Varun currently learning?"
 ];
 
 export const categories = [
-    { keywords: ['technology', 'technologies', 'stack', 'framework', 'frontend', 'backend'], response: responses.technologies },
-    { keywords: ['experience', 'work', 'job', 'american express', 'company'], response: responses.experience },
-    { keywords: ['education', 'study', 'school', 'college'], response: responses.education },
-    { keywords: ['learn', 'studying', 'current'], response: responses.learning },
-    { keywords: ['hobbies', 'interests', 'fun', 'free time'], response: responses.hobbies },
-    { keywords: ['contact', 'reach', 'email', 'hire'], response: responses.contact },
+    { keywords: ['current role', 'role', 'designation', 'title', 'fullstack', 'full stack', 'frontend developer', 'software engineer'], response: responses.role },
+    { keywords: ['technology', 'technologies', 'tech stack', 'stack', 'framework', 'frontend', 'backend', 'react', 'javascript', 'typescript', 'node', 'node.js', 'aws', 'redux', 'html', 'css'], response: responses.technologies },
+    { keywords: ['experience', 'work experience', 'career', 'professional', 'cisco', 'american express', 'amex', 'company', 'previous company'], response: responses.experience },
+    { keywords: ['education', 'study', 'school', 'college', 'degree', 'b tech', 'btech', 'nit', 'nit trichy'], response: responses.education },
+    { keywords: ['learn', 'learning', 'studying', 'currently learning', 'current learning', 'upskilling'], response: responses.learning },
+    { keywords: ['hobbies', 'interests', 'fun', 'free time', 'outside work'], response: responses.hobbies },
+    { keywords: ['contact', 'reach', 'email', 'mail', 'phone', 'connect', 'message'], response: responses.contact },
     { keywords: ['philosophy', 'approach', 'believe', 'ethics', 'values', 'principles'], response: responses.philosophy },
-    { keywords: ['project', 'build', 'portfolio'], response: responses.projects },
-    { keywords: ['skill', 'good at', 'expert'], response: responses.skills },
-    { keywords: ['future', 'next', 'goal', 'plan'], response: responses.future },
-    { keywords: ['hire', 'recruit', 'job', 'work with'], response: responses.hire },
-    { keywords: ['resume', 'cv', 'curriculum vitae'], response: responses.resume },
-    { keywords: ['bye', 'goodbye', 'see you', 'Good Night'], response: responses.bye },
-    { keywords: ['okay', 'alright', 'sounds good', 'got it', 'understood', 'sure', 'ok', 'Thanks', 'Thank you'], response: responses.okay },
+    { keywords: ['gk daily', 'daily insights', 'quiz', 'quizzes', 'current affairs', 'digest'], response: responses.gkProject },
+    { keywords: ['portfolio project', 'this portfolio', 'portfolio website', 'space themed portfolio'], response: responses.portfolioProject },
+    { keywords: ['project', 'projects', 'build', 'built', 'github projects', 'side project'], response: responses.projects },
+    { keywords: ['skill', 'skills', 'good at', 'expert'], response: responses.skills },
+    { keywords: ['strength', 'strengths', 'why hire', 'best at', 'stand out'], response: responses.strengths },
+    { keywords: ['future', 'next', 'goal', 'goals', 'plan', 'plans'], response: responses.future },
+    { keywords: ['available', 'availability', 'open to work', 'open for work'], response: responses.availability },
+    { keywords: ['hire', 'recruit', 'job opportunity', 'opportunity', 'collaborate', 'work with'], response: responses.hire },
+    { keywords: ['resume', 'cv', 'curriculum vitae', 'download resume'], response: responses.resume },
+    { keywords: ['location', 'where', 'based', 'city', 'bangalore', 'bengaluru'], response: responses.location },
+    { keywords: ['full name', 'name', 'varunkumar', 'varun kumar', 'varun yenni'], response: responses.name },
+    { keywords: ['github', 'code', 'repository', 'repo'], response: responses.github },
+    { keywords: ['linkedin', 'linked in', 'profile'], response: responses.linkedin },
+    { keywords: ['bye', 'goodbye', 'see you', 'good night'], response: responses.bye },
+    { keywords: ['okay', 'alright', 'sounds good', 'got it', 'understood', 'sure', 'ok', 'thanks', 'thank you'], response: responses.okay },
     { keywords: ['achievements', 'awards', 'recognition', 'accomplishments'], response: responses.achievements },
-    { keywords: ['hello', 'hi', 'hey', 'greetings', 'Good Morning', 'Good Evening'], response: "Hello! I'm here to tell you all about Varun. What would you like to know? 😊" }
+    { keywords: ['hello', 'hi', 'hey', 'greetings', 'good morning', 'good evening'], response: "Hello! I'm here to tell you all about Varun. You can ask about his role, experience, skills, projects, resume, education, or contact details. 😊" }
 ];
 
-export const defaultMessage = "Hi there! 👋 I'm Varun's chat bot. Ask me anything about his skills, experience, or interests!";
-export const unAvailableCategory = "That's an interesting question! I can tell you about Varun's technologies, experience, current learning, hobbies, contact info, or development philosophy. What interests you most?";
+export const defaultMessage = "Hi there! 👋 I'm Varun's chat bot. Ask me about his role, experience, skills, projects, resume, education, or contact details.";
+export const unAvailableCategory = "I do not know that one yet. Try asking about Varun's role, Cisco or American Express experience, projects, skills, resume, education, location, GitHub, LinkedIn, or contact details.";
 
 export const projects = [
     {

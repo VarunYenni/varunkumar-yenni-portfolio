@@ -16,46 +16,66 @@ const ChatBot = () => {
     const [isTyping, setIsTyping] = useState(false);
     const [hasUserInteracted, setHasUserInteracted] = useState(false);
     const messagesEndRef = useRef(null);
+    const typingTimeoutRef = useRef(null);
 
-    const getResponse = (userInput) => {
-        const input = userInput.toLowerCase();
-        for (const category of categories) {
-            if (category.keywords.some(keyword => input.includes(keyword))) {
-                return category.response;
-            }
+    const normalizeInput = (value) => value.toLowerCase().replace(/[^\w\s.+#-]/g, ' ').replace(/\s+/g, ' ').trim();
+
+    const matchesKeyword = (normalizedInput, keyword) => {
+        const normalizedKeyword = normalizeInput(keyword);
+        if (normalizedKeyword.length <= 3) {
+            return new RegExp(`\\b${normalizedKeyword}\\b`).test(normalizedInput);
         }
-        return unAvailableCategory
+        return normalizedInput.includes(normalizedKeyword);
     };
 
-    const handleSend = async () => {
-        if (!input.trim()) return;
+    const getResponse = (userInput) => {
+        const normalizedInput = normalizeInput(userInput);
+        const bestMatch = categories.reduce((best, category) => {
+            const score = category.keywords.reduce((total, keyword) => {
+                if (!matchesKeyword(normalizedInput, keyword)) return total;
+                return total + normalizeInput(keyword).split(' ').length;
+            }, 0);
+
+            if (score > best.score) {
+                return { score, response: category.response };
+            }
+            return best;
+        }, { score: 0, response: unAvailableCategory });
+
+        return bestMatch.response;
+    };
+
+    const handleSend = (messageText = input) => {
+        const trimmedInput = messageText.trim();
+        if (!trimmedInput) return;
         setHasUserInteracted(true);
 
         const userMessage = {
             id: Date.now(),
             type: 'user',
-            content: input,
+            content: trimmedInput,
             timestamp: new Date()
         };
 
         setMessages(prev => [...prev, userMessage]);
         setInput('');
         setIsTyping(true);
+        window.clearTimeout(typingTimeoutRef.current);
 
-        setTimeout(() => {
+        typingTimeoutRef.current = window.setTimeout(() => {
             const botResponse = {
                 id: Date.now() + 1,
                 type: 'bot',
-                content: getResponse(input),
+                content: getResponse(trimmedInput),
                 timestamp: new Date()
             };
             setMessages(prev => [...prev, botResponse]);
             setIsTyping(false);
-        }, 1000 + Math.random() * 1000);
+        }, 600 + Math.random() * 500);
     };
 
     const handleSuggestionClick = (question) => {
-        setInput(question);
+        handleSend(question);
     };
 
     const scrollToBottom = () => {
@@ -67,6 +87,8 @@ const ChatBot = () => {
             scrollToBottom();
         }
     }, [messages, hasUserInteracted]);
+
+    useEffect(() => () => window.clearTimeout(typingTimeoutRef.current), []);
 
     return (
         <div className="chatbot-container">
@@ -104,7 +126,7 @@ const ChatBot = () => {
                                     )}
                                 </div>
                                 <div className={`message-bubble ${message.type === 'user' ? 'user-bubble' : 'bot-bubble'}`}>
-                                    <p className="message-text">{message.content}</p>
+                                    <div className="message-text">{message.content}</div>
                                 </div>
                             </div>
                         </div>
@@ -132,12 +154,12 @@ const ChatBot = () => {
                 {/* Suggested Questions */}
                 <div className="chatbot-suggestions">
                     <div className="suggestions-container">
-                        {suggestedQuestions.slice(0, 2).map((question, index) => (
+                        {suggestedQuestions.slice(0, 6).map((question, index) => (
                             <button
                                 key={index}
                                 onClick={() => handleSuggestionClick(question)}
                                 className="suggestion-button"
-                                aria-label="suggestion"
+                                aria-label={question}
                             >
                                 {question}
                             </button>

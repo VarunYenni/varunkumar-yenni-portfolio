@@ -267,6 +267,35 @@
     margin: 0;
 }
 
+.message-text p {
+    margin: 0;
+}
+
+.message-text a {
+    color: #67e8f9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.message-text a:hover {
+    text-decoration: underline;
+}
+
+.chatbot-inline-button {
+    margin-left: 0.35rem;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid rgba(103, 232, 249, 0.45);
+    border-radius: 9999px;
+    background: rgba(6, 182, 212, 0.2);
+    color: white;
+    cursor: pointer;
+    font: inherit;
+}
+
+.chatbot-inline-button:hover {
+    background: rgba(6, 182, 212, 0.35);
+}
+
 /* Typing Indicator */
 .typing-indicator {
     display: flex;
@@ -302,6 +331,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    max-height: 5.75rem;
+    overflow-y: auto;
 }
 
 .suggestion-button {
