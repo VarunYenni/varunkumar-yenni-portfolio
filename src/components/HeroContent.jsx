@@ -35,11 +35,11 @@ const HeroContent = ({setModalOpen}) => {
                 </motion.h1>
 
                 <motion.h2 variants={item} className="hero-name">
-                    Varun Kumar
+                    Varunkumar Yenni
                 </motion.h2>
 
                 <motion.h3 variants={item} className="hero-role">
-                    Frontend Developer
+                    Fullstack Developer
                 </motion.h3>
 
                 <motion.p variants={item} className="hero-description">
