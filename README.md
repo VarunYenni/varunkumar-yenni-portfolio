@@ -7,8 +7,6 @@
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
 </p>
@@ -44,7 +42,7 @@ Whether you're a recruiter, fellow dev, or an accidental wanderer — I'm glad y
 | Category       | Stack                                                                      |
 |----------------|----------------------------------------------------------------------------|
 | 💻 Frontend     | React, JavaScript, TypeScript                                              |
-| 🧰 Backend      | Node.js, Java, Spring Boot (in-progress... building the backend biceps 💪) |
+| 🧰 Backend      | Node.js |
 | 🧠 Learning Now | AI/ML basics, OpenAI APIs, Docker, System Design, AWS                      |
 | 🛠️ Tooling      | Git, WebStorm, VSCode, Postman                                             |
 
