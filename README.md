@@ -1,5 +1,5 @@
 <h1 align="center">Hey there, I'm Varun 👋</h1>
-<p align="center">🚀 A passionate frontend engineer, aspiring full-stack wizard & AI sorcerer-in-training 🧙‍♂️</p>
+<p align="center">🚀 A passionate frontend engineer, aspiring full-stack & AI enthusiast</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -42,8 +42,8 @@ Whether you're a recruiter, fellow dev, or an accidental wanderer — I'm glad y
 | Category       | Stack                                                                      |
 |----------------|----------------------------------------------------------------------------|
 | 💻 Frontend     | React, JavaScript, TypeScript                                              |
-| 🧰 Backend      | Node.js |
-| 🧠 Learning Now | AI/ML basics, OpenAI APIs, Docker, System Design, AWS                      |
+| 🧰 Backend      | Node.js | Python
+| 🧠 Learning Now | AI/ML, OpenAI APIs, Docker, System Design, AWS                             |
 | 🛠️ Tooling      | Git, WebStorm, VSCode, Postman                                             |
 
 ---
