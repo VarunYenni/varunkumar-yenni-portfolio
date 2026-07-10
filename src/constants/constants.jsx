@@ -155,7 +155,7 @@ export const categories = [
     { keywords: ['bye', 'goodbye', 'see you', 'good night'], response: responses.bye },
     { keywords: ['okay', 'alright', 'sounds good', 'got it', 'understood', 'sure', 'ok', 'thanks', 'thank you'], response: responses.okay },
     { keywords: ['achievements', 'awards', 'recognition', 'accomplishments'], response: responses.achievements },
-    { keywords: ['hello', 'hi', 'hey', 'greetings', 'good morning', 'good evening'], response: "Hello! I'm here to tell you all about Varun. You can ask about his role, experience, skills, projects, resume, education, or contact details. 😊" }
+    { keywords: ['hello', 'hi', 'hii', 'hey', 'greetings', 'good morning', 'good evening'], response: "Hello! I'm here to tell you all about Varun. You can ask about his role, experience, skills, projects, resume, education, or contact details. 😊" }
 ];
 
 export const defaultMessage = "Hi there! 👋 I'm Varun's chat bot. Ask me about his role, experience, skills, projects, resume, education, or contact details.";

@@ -183,7 +183,7 @@ const ChatBot = () => {
                             className="chat-input"
                         />
                         <button
-                            onClick={handleSend}
+                            onClick={() => handleSend()}
                             disabled={!input.trim()}
                             className="send-button"
                             aria-label="send-button"
